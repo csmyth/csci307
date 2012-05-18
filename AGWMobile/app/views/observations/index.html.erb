@@ -1,0 +1,27 @@
+<h1>Listing observations</h1>
+
+<table>
+  <tr>
+    <th>Def fee</th>
+    <th>Title</th>
+    <th>Archived</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @observations.each do |observation| %>
+  <tr>
+    <td><%= observation.def_fee %></td>
+    <td><%= observation.title %></td>
+    <td><%= observation.archived %></td>
+    <td><%= link_to 'Show', observation %></td>
+    <td><%= link_to 'Edit', edit_observation_path(observation) %></td>
+    <td><%= link_to 'Destroy', observation, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Observation', new_observation_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Def fee:</b>
+  <%= @observation.def_fee %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @observation.title %>
+</p>
+
+<p>
+  <b>Archived:</b>
+  <%= @observation.archived %>
+</p>
+
+
+<%= link_to 'Edit', edit_observation_path(@observation) %> |
+<%= link_to 'Back', observations_path %>
