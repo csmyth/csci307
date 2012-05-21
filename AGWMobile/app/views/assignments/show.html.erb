@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @assignment.user_id %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @assignment.project_id %>
+</p>
+
+<p>
+  <b>Observation:</b>
+  <%= @assignment.observation_id %>
+</p>
+
+<p>
+  <b>Archived:</b>
+  <%= @assignment.archived %>
+</p>
+
+<p>
+  <b>Archive date:</b>
+  <%= @assignment.archive_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_assignment_path(@assignment) %> |
+<%= link_to 'Back', assignments_path %>

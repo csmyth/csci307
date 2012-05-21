@@ -1,0 +1,31 @@
+<h1>Listing assignments</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Project</th>
+    <th>Observation</th>
+    <th>Archived</th>
+    <th>Archive date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @assignments.each do |assignment| %>
+  <tr>
+    <td><%= assignment.user_id %></td>
+    <td><%= assignment.project_id %></td>
+    <td><%= assignment.observation_id %></td>
+    <td><%= assignment.archived %></td>
+    <td><%= assignment.archive_date %></td>
+    <td><%= link_to 'Show', assignment %></td>
+    <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
+    <td><%= link_to 'Destroy', assignment, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Assignment', new_assignment_path %>

@@ -4,6 +4,8 @@ class CreateRedFlags < ActiveRecord::Migration
       t.integer :client_id
       t.integer :project_id
       t.text :description, :null => false
+      t.boolean :archived, :default => false
+      t.date :archive_date
 
       t.timestamps
     end

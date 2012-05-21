@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  project_id: 1
+  observation_id: 1
+  archived: false
+  archive_date: 2012-05-21
+
+two:
+  user_id: 1
+  project_id: 1
+  observation_id: 1
+  archived: false
+  archive_date: 2012-05-21

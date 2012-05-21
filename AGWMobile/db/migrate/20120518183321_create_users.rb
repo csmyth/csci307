@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration
 	    t.string :title
 	    t.string :certification
 	    t.string :phone
+	    t.boolean :archived, :default => false
       	t.date :archive_date
       
       	t.string    :login,               :null => false                # optional, you can use email instead, or both

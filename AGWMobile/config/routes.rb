@@ -1,4 +1,6 @@
 AGWMobile::Application.routes.draw do
+  resources :assignments
+
   resources :red_flags
 
   resources :projects

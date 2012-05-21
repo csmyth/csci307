@@ -10,6 +10,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :email, :null => false
       t.string :cell_phone
       t.string :business_phone
+      t.boolean :archived, :default => false
       t.date :archive_date
 
       t.timestamps

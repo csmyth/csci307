@@ -10,6 +10,7 @@ class CreateClients < ActiveRecord::Migration
       t.string :phone
       t.string :fax
       t.boolean :PO_required, :default => true
+      t.boolean :archived, :default => false
       t.date :archive_date
 
       t.timestamps

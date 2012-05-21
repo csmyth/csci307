@@ -18,6 +18,7 @@ class CreateProjects < ActiveRecord::Migration
       t.integer :filing
       t.integer :building
       t.integer :unit
+      t.boolean :archived, :default => false
       t.date :archive_date
       t.text :description
 
