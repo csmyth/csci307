@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20120521180604) do
   end
 
   create_table "clients", :force => true do |t|
+<<<<<<< HEAD
     t.string   "company_name",                    :null => false
     t.string   "address1",                        :null => false
     t.string   "address2"
@@ -37,6 +38,20 @@ ActiveRecord::Schema.define(:version => 20120521180604) do
     t.date     "archive_date"
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
+=======
+    t.string   "company_name",                   :null => false
+    t.string   "address1",                       :null => false
+    t.string   "address2"
+    t.string   "city",                           :null => false
+    t.string   "state",                          :null => false
+    t.string   "zipcode",                        :null => false
+    t.string   "phone"
+    t.string   "fax"
+    t.boolean  "PO_required",  :default => true
+    t.date     "archive_date"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+>>>>>>> b498ced3742517bbe0e1775f82d70b92680a61cf
   end
 
   create_table "contacts", :force => true do |t|
@@ -56,18 +71,29 @@ ActiveRecord::Schema.define(:version => 20120521180604) do
   end
 
   create_table "observations", :force => true do |t|
+<<<<<<< HEAD
     t.decimal  "def_fee",      :precision => 8, :scale => 2,                    :null => false
     t.string   "title",                                                         :null => false
     t.boolean  "archived",                                   :default => false
+=======
+    t.decimal  "def_fee",      :precision => 8, :scale => 2, :null => false
+    t.string   "title",                                      :null => false
+>>>>>>> b498ced3742517bbe0e1775f82d70b92680a61cf
     t.date     "archive_date"
     t.datetime "created_at",                                                    :null => false
     t.datetime "updated_at",                                                    :null => false
   end
 
   create_table "projects", :force => true do |t|
+<<<<<<< HEAD
     t.integer  "client_id",                             :null => false
     t.integer  "project_number",                        :null => false
     t.integer  "primary_contact_id",                    :null => false
+=======
+    t.integer  "client_id",          :null => false
+    t.integer  "project_number",     :null => false
+    t.integer  "primary_contact_id", :null => false
+>>>>>>> b498ced3742517bbe0e1775f82d70b92680a61cf
     t.integer  "billing_contact_id"
     t.integer  "letter_contact_id"
     t.boolean  "PO_per_project"
@@ -100,9 +126,15 @@ ActiveRecord::Schema.define(:version => 20120521180604) do
   end
 
   create_table "users", :force => true do |t|
+<<<<<<< HEAD
     t.string   "first_name",                             :null => false
     t.string   "middle_name"
     t.string   "last_name",                              :null => false
+=======
+    t.string   "first_name",                         :null => false
+    t.string   "middle_name"
+    t.string   "last_name",                          :null => false
+>>>>>>> b498ced3742517bbe0e1775f82d70b92680a61cf
     t.string   "title"
     t.string   "certification"
     t.string   "phone"
