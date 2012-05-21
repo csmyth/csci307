@@ -14,47 +14,47 @@
 ActiveRecord::Schema.define(:version => 20120521172057) do
 
   create_table "clients", :force => true do |t|
-    t.string   "company_name"
-    t.string   "address1"
+    t.string   "company_name",                   :null => false
+    t.string   "address1",                       :null => false
     t.string   "address2"
-    t.string   "city"
-    t.string   "state"
-    t.string   "zipcode"
+    t.string   "city",                           :null => false
+    t.string   "state",                          :null => false
+    t.string   "zipcode",                        :null => false
     t.string   "phone"
     t.string   "fax"
-    t.boolean  "PO_required"
+    t.boolean  "PO_required",  :default => true
     t.date     "archive_date"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
   create_table "contacts", :force => true do |t|
-    t.integer  "company_id"
-    t.boolean  "is_primary"
-    t.string   "first_name"
+    t.integer  "company_id",                        :null => false
+    t.boolean  "is_primary",     :default => false
+    t.string   "first_name",                        :null => false
     t.string   "middle_name"
-    t.string   "last_name"
+    t.string   "last_name",                         :null => false
     t.string   "title"
-    t.string   "email"
+    t.string   "email",                             :null => false
     t.string   "cell_phone"
     t.string   "business_phone"
     t.date     "archive_date"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
   end
 
   create_table "observations", :force => true do |t|
-    t.decimal  "def_fee",      :precision => 8, :scale => 2
-    t.string   "title"
+    t.decimal  "def_fee",      :precision => 8, :scale => 2, :null => false
+    t.string   "title",                                      :null => false
     t.date     "archive_date"
     t.datetime "created_at",                                 :null => false
     t.datetime "updated_at",                                 :null => false
   end
 
   create_table "projects", :force => true do |t|
-    t.integer  "client_id"
-    t.integer  "project_number"
-    t.integer  "primary_contact_id"
+    t.integer  "client_id",          :null => false
+    t.integer  "project_number",     :null => false
+    t.integer  "primary_contact_id", :null => false
     t.integer  "billing_contact_id"
     t.integer  "letter_contact_id"
     t.boolean  "PO_per_project"
@@ -84,9 +84,9 @@ ActiveRecord::Schema.define(:version => 20120521172057) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "first_name"
+    t.string   "first_name",                         :null => false
     t.string   "middle_name"
-    t.string   "last_name"
+    t.string   "last_name",                          :null => false
     t.string   "title"
     t.string   "certification"
     t.string   "phone"
