@@ -1,13 +1,13 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-	    t.string :first_name
+	    t.string :first_name, :null => false
 	    t.string :middle_name
-	    t.string :last_name
+	    t.string :last_name, :null => false
 	    t.string :title
 	    t.string :certification
 	    t.string :phone
-      	t.boolean :archived, :default => false
+      	t.date :archive_date
       
       	t.string    :login,               :null => false                # optional, you can use email instead, or both
 		t.string    :email,               :null => false                # optional, you can use login instead, or both

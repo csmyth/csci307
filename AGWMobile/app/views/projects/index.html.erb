@@ -1,0 +1,59 @@
+<h1>Listing projects</h1>
+
+<table>
+  <tr>
+    <th>Client</th>
+    <th>Project number</th>
+    <th>Primary contact</th>
+    <th>Billing contact</th>
+    <th>Letter contact</th>
+    <th>Po per project</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+    <th>Subdivision</th>
+    <th>Lot</th>
+    <th>Block</th>
+    <th>Filing</th>
+    <th>Building</th>
+    <th>Unit</th>
+    <th>Archived</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= project.client_id %></td>
+    <td><%= project.project_number %></td>
+    <td><%= project.primary_contact_id %></td>
+    <td><%= project.billing_contact_id %></td>
+    <td><%= project.letter_contact_id %></td>
+    <td><%= project.PO_per_project %></td>
+    <td><%= project.address1 %></td>
+    <td><%= project.address2 %></td>
+    <td><%= project.city %></td>
+    <td><%= project.state %></td>
+    <td><%= project.zipcode %></td>
+    <td><%= project.subdivision %></td>
+    <td><%= project.lot %></td>
+    <td><%= project.block %></td>
+    <td><%= project.filing %></td>
+    <td><%= project.building %></td>
+    <td><%= project.unit %></td>
+    <td><%= project.archived %></td>
+    <td><%= project.description %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project', new_project_path %>

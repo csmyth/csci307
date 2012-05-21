@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @red_flag.client_id %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @red_flag.project_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @red_flag.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_red_flag_path(@red_flag) %> |
+<%= link_to 'Back', red_flags_path %>
