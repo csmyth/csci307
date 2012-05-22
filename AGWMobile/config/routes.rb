@@ -1,4 +1,6 @@
 AGWMobile::Application.routes.draw do
+  devise_for :users
+
   resources :assignments
 
   resources :red_flags
