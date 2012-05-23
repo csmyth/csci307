@@ -7,4 +7,3 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # create admin role here
-#admin = Users.create()

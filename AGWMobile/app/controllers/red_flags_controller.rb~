@@ -1,5 +1,4 @@
 class RedFlagsController < ApplicationController
-  before_filter :authenticate_user!
   # GET /red_flags
   # GET /red_flags.json
   def index
