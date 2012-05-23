@@ -7,6 +7,8 @@ class Ability
     if user.role? :admin
      can :manage, :all
     end
+    
+    can :manage, :all
 
     # Else for each table 
 	#for each priveledge in table 
