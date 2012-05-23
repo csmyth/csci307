@@ -37,14 +37,14 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 gem 'authlogic'
 
 source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '2.0.0'
-=======
+
 gem 'devise'
 
 gem 'cancan'
->>>>>>> 32cf89641cd20692d21bba7ce55f7f0011875d02
+# >>>>>>> 32cf89641cd20692d21bba7ce55f7f0011875d02
