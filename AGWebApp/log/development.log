@@ -15086,3 +15086,692 @@ ActionController::RoutingError (uninitialized constant RolesController):
 
 
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2012-05-24 10:26:32 -0600
+Processing by RolesController#index as HTML
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" [0m
+Completed 500 Internal Server Error in 101ms
+
+ActionView::MissingTemplate (Missing template roles/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/jimmie/Documents/CSM/Field Session-CompSci/csci307/AGWebApp/app/views"
+  * "/usr/local/rvm/gems/ruby-1.9.3-p125/gems/devise_invitable-1.0.1/app/views"
+  * "/usr/local/rvm/gems/ruby-1.9.3-p125/gems/devise-2.1.0/app/views"
+):
+  app/controllers/roles_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (3.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-05-24 10:34:27 -0600
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 59ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:27 -0600
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (172.4ms)
+Completed 500 Internal Server Error in 191ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xa4f9250>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:31 -0600
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0x9299880>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:31 -0600
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xa9fd918>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:31 -0600
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xa5a6d38>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:32 -0600
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xad44130>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:32 -0600
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xac5cbdc>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:32 -0600
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xab414a0>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (55.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (61.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:34:32 -0600
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0x92929e0>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:35:23 -0600
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (30.9ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xabdace0>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__784626619_77755690'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__784626619_77755690'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:35:46 -0600
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered home/index.html.erb within layouts/application (193.9ms)
+Completed 500 Internal Server Error in 249ms
+
+ActionView::Template::Error (undefined method `privileges' for #<User:0xa712654>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb___720122660_76729500'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___720122660_76729500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:37:06 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered home/index.html.erb within layouts/application (176.2ms)
+Completed 500 Internal Server Error in 222ms
+
+ActionView::Template::Error (undefined method `role' for #<User:0xa1fec44>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb___265120902_74158190'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___265120902_74158190'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:37:42 -0600
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (197.6ms)
+Completed 500 Internal Server Error in 257ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x82b9cd0>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__29923791_67853640'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__29923791_67853640'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:37:43 -0600
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x8a03180>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__29923791_67853640'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__29923791_67853640'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:37:43 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x9a67e2c>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__29923791_67853640'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__29923791_67853640'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:37:44 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x9aaecdc>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__29923791_67853640'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__29923791_67853640'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:37:44 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x9784570>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__29923791_67853640'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__29923791_67853640'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:19 -0600
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.3ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (194.4ms)
+Completed 500 Internal Server Error in 254ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x8db1a5c>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__117973316_73605230'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__117973316_73605230'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:21 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x9fe1b00>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__117973316_73605230'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__117973316_73605230'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:21 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x9dbc294>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__117973316_73605230'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__117973316_73605230'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:22 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0xa6e3dcc>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__117973316_73605230'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__117973316_73605230'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (48.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:22 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x8d1f7d8>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__117973316_73605230'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__117973316_73605230'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:22 -0600
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x9fe21a4>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__117973316_73605230'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__117973316_73605230'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:22 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0xa61939c>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb__117973316_73605230'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb__117973316_73605230'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:38:35 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (194.5ms)
+Completed 500 Internal Server Error in 250ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x8a1fc04>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb___144015922_71732660'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___144015922_71732660'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:41:13 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (187.3ms)
+Completed 500 Internal Server Error in 257ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x8a8d718>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb___246913845_72006790'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___246913845_72006790'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 10:41:14 -0600
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `privileges' for #<ActiveRecord::Relation:0x9cbcc54>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4:   <%= can?(:update,@user) %>
+    5: <% end %>
+  app/models/ability.rb:14:in `initialize'
+  app/views/home/index.html.erb:4:in `block in _app_views_home_index_html_erb___246913845_72006790'
+  app/views/home/index.html.erb:2:in `each'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___246913845_72006790'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.7ms)

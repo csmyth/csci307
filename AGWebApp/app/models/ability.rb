@@ -10,8 +10,8 @@ class Ability
     end
 
     
-    # For each priviledge the user has
-	#user.privileges.each do | privilege |
+  # For each priviledge the user has
+	#user.roles.privileges.each do | role | 
 		# For each Table
 		# Choose the table
 			#if privilege.read_all
