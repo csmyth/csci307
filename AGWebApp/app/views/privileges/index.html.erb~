@@ -20,7 +20,7 @@
   <tr>
     <td><%= privilege.role_id %></td>
     <td><%= privilege.table_name %></td>
-    <td><%= privilege.hatch %></td>
+    <td><%= privilege.create %></td>
     <td><%= privilege.read_all %></td>
     <td><%= privilege.read_own %></td>
     <td><%= privilege.update_all %></td>
