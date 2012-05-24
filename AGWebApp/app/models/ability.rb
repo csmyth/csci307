@@ -5,7 +5,7 @@ class Ability
     user ||= User.new # guest user (not logged in)
 	
     # No matter what the admin role can do anything, including flying, bending space time, and making a pb&j
-    if user.role? :admin
+    if user.has_role? :admin
       can :manage, :all
     end
 
