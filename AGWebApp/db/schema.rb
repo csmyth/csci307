@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(:version => 20120523212333) do
   create_table "privileges", :force => true do |t|
     t.integer  "role_id"
     t.string   "table_name"
-    t.boolean  "create"
+    t.boolean  "hatch"
     t.boolean  "read_all"
     t.boolean  "read_own"
     t.boolean  "update_all"
