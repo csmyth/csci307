@@ -9032,3 +9032,1098 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-24 05:11:56 -0600
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 09:40:25 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (31.2ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (811.2ms)
+Compiled assignments.css  (62ms)  (pid 4812)
+Compiled bootstrap_and_overrides.css  (4414ms)  (pid 4812)
+Compiled clients.css  (15ms)  (pid 4812)
+Compiled contacts.css  (0ms)  (pid 4812)
+Compiled home.css  (0ms)  (pid 4812)
+Compiled observations.css  (15ms)  (pid 4812)
+Compiled privileges.css  (0ms)  (pid 4812)
+Compiled projects.css  (0ms)  (pid 4812)
+Compiled red_flags.css  (15ms)  (pid 4812)
+Compiled scaffolds.css  (31ms)  (pid 4812)
+Compiled supports.css  (0ms)  (pid 4812)
+Compiled users.css  (0ms)  (pid 4812)
+Compiled application.css  (31ms)  (pid 4812)
+Compiled jquery.js  (15ms)  (pid 4812)
+Compiled jquery_ujs.js  (0ms)  (pid 4812)
+Compiled bootstrap-transition.js  (0ms)  (pid 4812)
+Compiled bootstrap-alert.js  (0ms)  (pid 4812)
+Compiled bootstrap-button.js  (0ms)  (pid 4812)
+Compiled bootstrap-carousel.js  (0ms)  (pid 4812)
+Compiled bootstrap-collapse.js  (0ms)  (pid 4812)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 4812)
+Compiled bootstrap-modal.js  (0ms)  (pid 4812)
+Compiled bootstrap-scrollspy.js  (15ms)  (pid 4812)
+Compiled bootstrap-tab.js  (15ms)  (pid 4812)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 4812)
+Compiled bootstrap-popover.js  (0ms)  (pid 4812)
+Compiled bootstrap-typeahead.js  (15ms)  (pid 4812)
+Compiled bootstrap.js  (655ms)  (pid 4812)
+Compiled assignments.js  (967ms)  (pid 4812)
+Compiled clients.js  (483ms)  (pid 4812)
+Compiled contacts.js  (483ms)  (pid 4812)
+Compiled home.js  (514ms)  (pid 4812)
+Compiled observations.js  (483ms)  (pid 4812)
+Compiled privileges.js  (499ms)  (pid 4812)
+Compiled projects.js  (483ms)  (pid 4812)
+Compiled red_flags.js  (499ms)  (pid 4812)
+Compiled supports.js  (499ms)  (pid 4812)
+Compiled users.js  (467ms)  (pid 4812)
+Compiled application.js  (6474ms)  (pid 4812)
+  Rendered layouts/_navigation.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 12839ms (Views: 12698.4ms | ActiveRecord: 78.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (15.6ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_navigation.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 62.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /application.css - 200 OK (78ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /assignments.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /bootstrap_and_overrides.css - 200 OK (15ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /clients.css - 200 OK (15ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /contacts.css - 200 OK (46ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /home.css - 200 OK (15ms)
+
+
+Started GET "/assets/red_flags.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /red_flags.css - 200 OK (15ms)
+
+
+Started GET "/assets/privileges.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /privileges.css - 200 OK (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /projects.css - 200 OK (15ms)
+
+
+Started GET "/assets/observations.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /observations.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/supports.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /supports.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:38 -0600
+Served asset /users.css - 200 OK (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /jquery.js - 200 OK (62ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /jquery_ujs.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-transition.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-alert.js - 200 OK (62ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-collapse.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-carousel.js - 200 OK (46ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-modal.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-scrollspy.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-tab.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap-typeahead.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /bootstrap.js - 200 OK (93ms)
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /assignments.js - 200 OK (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /contacts.js - 200 OK (0ms)
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /clients.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/observations.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /observations.js - 200 OK (31ms)
+
+
+Started GET "/assets/privileges.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:39 -0600
+Served asset /privileges.js - 200 OK (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:40 -0600
+Served asset /projects.js - 200 OK (0ms)
+
+
+Started GET "/assets/red_flags.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:40 -0600
+Served asset /red_flags.js - 200 OK (15ms)
+
+
+Started GET "/assets/supports.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:40 -0600
+Served asset /supports.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:40 -0600
+Served asset /users.js - 200 OK (46ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:40 -0600
+Served asset /application.js - 200 OK (93ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-05-24 09:40:53 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-05-24 09:40:53 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (15.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1185.6ms)
+  Rendered layouts/_navigation.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1295ms (Views: 1294.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /assignments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /observations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /privileges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /projects.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/red_flags.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /red_flags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /supports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:55 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /assignments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /clients.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /observations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /privileges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /red_flags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /supports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-24 09:40:56 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-05-24 09:41:26 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"erS0iNLxEDxDIMEAsLlBb1WohUF9ZRjFM1yuoGH7iiA=", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = '2012-05-24 15:41:26.570144', "sign_in_count" = 2, "updated_at" = '2012-05-24 15:41:26.570144' WHERE "users"."id" = 1[0m
+  [1m[35m (109.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 764ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered layouts/_navigation.html.erb (15.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /assignments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /observations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /privileges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /red_flags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /supports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:27 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /assignments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /clients.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /contacts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /observations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /privileges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /red_flags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /supports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:28 -0600
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (15.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))[0m
+  Rendered layouts/_navigation.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /assignments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /observations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /privileges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /red_flags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /supports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:34 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /bootstrap.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /assignments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /clients.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /observations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /privileges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /red_flags.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/supports.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /supports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:35 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (15.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered layouts/_navigation.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 62.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /assignments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /observations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /privileges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /red_flags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /supports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:37 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /assignments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /clients.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /observations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /privileges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /red_flags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /supports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-24 09:41:38 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2012-05-24 09:43:11 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (31.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 1 AND (((name = 'admin') AND (resource_type IS NULL) AND (resource_id IS NULL)))
+  Rendered layouts/_navigation.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:11 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/assignments.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:11 -0600
+Served asset /assignments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:11 -0600
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:11 -0600
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /observations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /privileges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /red_flags.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /supports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /bootstrap.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/assignments.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /assignments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /clients.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/observations.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /observations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/privileges.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /privileges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/red_flags.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:12 -0600
+Served asset /red_flags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supports.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:13 -0600
+Served asset /supports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:13 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-24 09:43:13 -0600
+Served asset /application.js - 304 Not Modified (15ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePrivileges (20120523212333)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (23.0ms)[0m  [1mDROP TABLE "privileges"[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120523212333'
+  [1m[36m (111.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("assignments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("clients")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("contacts")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("observations")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("projects")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("red_flags")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("roles")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_roles_on_name')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_roles_on_name_and_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_invited_by_id')[0m
+  [1m[35m (1.0ms)[0m  PRAGMA index_info('index_users_on_invitation_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users_roles")
+  [1m[36m (1.0ms)[0m  [1mPRAGMA index_info('index_users_roles_on_user_id_and_role_id')[0m

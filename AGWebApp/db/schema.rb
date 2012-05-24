@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120523212333) do
+ActiveRecord::Schema.define(:version => 20120523204504) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id",                           :null => false
@@ -62,20 +62,6 @@ ActiveRecord::Schema.define(:version => 20120523212333) do
     t.date     "archive_date"
     t.datetime "created_at",                                                    :null => false
     t.datetime "updated_at",                                                    :null => false
-  end
-
-  create_table "privileges", :force => true do |t|
-    t.integer  "role_id"
-    t.string   "table_name"
-    t.boolean  "create"
-    t.boolean  "read_all"
-    t.boolean  "read_own"
-    t.boolean  "update_all"
-    t.boolean  "update_own"
-    t.boolean  "delete_all"
-    t.boolean  "delete_own"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "projects", :force => true do |t|
