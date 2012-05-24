@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client_id: 1
+  project_id: 1
+  description: MyText
+  archived: false
+  archive_date: 2012-05-23
+
+two:
+  client_id: 1
+  project_id: 1
+  description: MyText
+  archived: false
+  archive_date: 2012-05-23

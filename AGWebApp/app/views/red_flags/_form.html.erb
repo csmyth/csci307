@@ -1,0 +1,15 @@
+<%= simple_form_for(@red_flag) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :client_id %>
+    <%= f.input :project_id %>
+    <%= f.input :description %>
+    <%= f.input :archived %>
+    <%= f.input :archive_date %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

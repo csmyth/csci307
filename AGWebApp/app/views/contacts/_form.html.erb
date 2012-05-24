@@ -1,0 +1,21 @@
+<%= simple_form_for(@contact) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :company_id %>
+    <%= f.input :is_primary %>
+    <%= f.input :first_name %>
+    <%= f.input :middle_name %>
+    <%= f.input :last_name %>
+    <%= f.input :title %>
+    <%= f.input :email %>
+    <%= f.input :cell_phone %>
+    <%= f.input :business_phone %>
+    <%= f.input :archived %>
+    <%= f.input :archive_date %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

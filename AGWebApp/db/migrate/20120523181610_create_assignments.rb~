@@ -1,0 +1,13 @@
+class CreateAssignments < ActiveRecord::Migration
+  def change
+    create_table :assignments do |t|
+      t.integer :user_id
+      t.integer :project_id
+      t.integer :observation_id
+      t.boolean :archived
+      t.date :archive_date
+
+      t.timestamps
+    end
+  end
+end

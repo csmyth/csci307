@@ -1,0 +1,105 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @project.client_id %>
+</p>
+
+<p>
+  <b>Project number:</b>
+  <%= @project.project_number %>
+</p>
+
+<p>
+  <b>Primary contact:</b>
+  <%= @project.primary_contact_id %>
+</p>
+
+<p>
+  <b>Billing contact:</b>
+  <%= @project.billing_contact_id %>
+</p>
+
+<p>
+  <b>Letter contact:</b>
+  <%= @project.letter_contact_id %>
+</p>
+
+<p>
+  <b>Po per project:</b>
+  <%= @project.PO_per_project %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%= @project.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @project.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @project.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @project.state %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @project.zipcode %>
+</p>
+
+<p>
+  <b>Subdivision:</b>
+  <%= @project.subdivision %>
+</p>
+
+<p>
+  <b>Lot:</b>
+  <%= @project.lot %>
+</p>
+
+<p>
+  <b>Block:</b>
+  <%= @project.block %>
+</p>
+
+<p>
+  <b>Filing:</b>
+  <%= @project.filing %>
+</p>
+
+<p>
+  <b>Building:</b>
+  <%= @project.building %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @project.unit %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @project.description %>
+</p>
+
+<p>
+  <b>Archived:</b>
+  <%= @project.archived %>
+</p>
+
+<p>
+  <b>Archive date:</b>
+  <%= @project.archive_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

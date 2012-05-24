@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client_id: 1
+  project_number: 1
+  primary_contact_id: 1
+  billing_contact_id: 1
+  letter_contact_id: 1
+  PO_per_project: false
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  subdivision: MyString
+  lot: 1
+  block: 1
+  filing: 1
+  building: 1
+  unit: 1
+  description: MyText
+  archived: false
+  archive_date: 2012-05-23
+
+two:
+  client_id: 1
+  project_number: 1
+  primary_contact_id: 1
+  billing_contact_id: 1
+  letter_contact_id: 1
+  PO_per_project: false
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  subdivision: MyString
+  lot: 1
+  block: 1
+  filing: 1
+  building: 1
+  unit: 1
+  description: MyText
+  archived: false
+  archive_date: 2012-05-23

@@ -1,0 +1,17 @@
+class CreatePrivileges < ActiveRecord::Migration
+  def change
+    create_table :privileges do |t|
+      t.integer :role_id
+      t.string :table_name
+      t.boolean :create
+      t.boolean :read_all
+      t.boolean :read_own
+      t.boolean :update_all
+      t.boolean :update_own
+      t.boolean :delete_all
+      t.boolean :delete_own
+
+      t.timestamps
+    end
+  end
+end

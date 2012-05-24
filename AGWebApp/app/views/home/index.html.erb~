@@ -1,0 +1,7 @@
+<h3>Home</h3>
+<% @users.each do |user| %>
+  <p>User: <%=link_to user.name, user %></p>
+  <%= link_to_if(can?(:update,@user), "Edit", edit_user_path(@user)) %>
+  <%= can?(:update,@user) %>
+  <%= "here" %>
+<% end %>

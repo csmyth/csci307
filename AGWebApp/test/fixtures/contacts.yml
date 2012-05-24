@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company_id: 1
+  is_primary: false
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  title: MyString
+  email: MyString
+  cell_phone: MyString
+  business_phone: MyString
+  archived: false
+  archive_date: 2012-05-23
+
+two:
+  company_id: 1
+  is_primary: false
+  first_name: MyString
+  middle_name: MyString
+  last_name: MyString
+  title: MyString
+  email: MyString
+  cell_phone: MyString
+  business_phone: MyString
+  archived: false
+  archive_date: 2012-05-23

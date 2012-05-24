@@ -1,0 +1,19 @@
+<%= simple_form_for(@privilege) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :role_id %>
+    <%= f.input :table_name %>
+    <%= f.input :create %>
+    <%= f.input :read_all %>
+    <%= f.input :read_own %>
+    <%= f.input :update_all %>
+    <%= f.input :update_own %>
+    <%= f.input :delete_all %>
+    <%= f.input :delete_own %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

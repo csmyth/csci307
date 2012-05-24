@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  role_id: 1
+  table_name: MyString
+  create: false
+  read_all: false
+  read_own: false
+  update_all: false
+  update_own: false
+  delete_all: false
+  delete_own: false
+
+two:
+  role_id: 1
+  table_name: MyString
+  create: false
+  read_all: false
+  read_own: false
+  update_all: false
+  update_own: false
+  delete_all: false
+  delete_own: false

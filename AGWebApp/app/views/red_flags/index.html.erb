@@ -1,0 +1,31 @@
+<h1>Listing red_flags</h1>
+
+<table>
+  <tr>
+    <th>Client</th>
+    <th>Project</th>
+    <th>Description</th>
+    <th>Archived</th>
+    <th>Archive date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @red_flags.each do |red_flag| %>
+  <tr>
+    <td><%= red_flag.client_id %></td>
+    <td><%= red_flag.project_id %></td>
+    <td><%= red_flag.description %></td>
+    <td><%= red_flag.archived %></td>
+    <td><%= red_flag.archive_date %></td>
+    <td><%= link_to 'Show', red_flag %></td>
+    <td><%= link_to 'Edit', edit_red_flag_path(red_flag) %></td>
+    <td><%= link_to 'Destroy', red_flag, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Red flag', new_red_flag_path %>

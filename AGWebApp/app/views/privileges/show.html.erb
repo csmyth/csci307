@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Role:</b>
+  <%= @privilege.role_id %>
+</p>
+
+<p>
+  <b>Table name:</b>
+  <%= @privilege.table_name %>
+</p>
+
+<p>
+  <b>Create:</b>
+  <%= @privilege.create %>
+</p>
+
+<p>
+  <b>Read all:</b>
+  <%= @privilege.read_all %>
+</p>
+
+<p>
+  <b>Read own:</b>
+  <%= @privilege.read_own %>
+</p>
+
+<p>
+  <b>Update all:</b>
+  <%= @privilege.update_all %>
+</p>
+
+<p>
+  <b>Update own:</b>
+  <%= @privilege.update_own %>
+</p>
+
+<p>
+  <b>Delete all:</b>
+  <%= @privilege.delete_all %>
+</p>
+
+<p>
+  <b>Delete own:</b>
+  <%= @privilege.delete_own %>
+</p>
+
+
+<%= link_to 'Edit', edit_privilege_path(@privilege) %> |
+<%= link_to 'Back', privileges_path %>

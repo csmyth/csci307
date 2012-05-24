@@ -1,0 +1,30 @@
+<%= simple_form_for(@project) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :client_id %>
+    <%= f.input :project_number %>
+    <%= f.input :primary_contact_id %>
+    <%= f.input :billing_contact_id %>
+    <%= f.input :letter_contact_id %>
+    <%= f.input :PO_per_project %>
+    <%= f.input :address1 %>
+    <%= f.input :address2 %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :zipcode %>
+    <%= f.input :subdivision %>
+    <%= f.input :lot %>
+    <%= f.input :block %>
+    <%= f.input :filing %>
+    <%= f.input :building %>
+    <%= f.input :unit %>
+    <%= f.input :description %>
+    <%= f.input :archived %>
+    <%= f.input :archive_date %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
