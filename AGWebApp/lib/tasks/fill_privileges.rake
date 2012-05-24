@@ -4,7 +4,7 @@ task :fill_privileges => :environment do
 		ActiveRecord::Base.connection.tables.each do | table |
 			# Create corresponding privilege
 			puts "Created privilege for " + role.name + " " + table.to_s
-			Privilege.find_or_create_by_role_id_and_table_name( role.id, table.to_s )	
+			Privilege.find_or_create_by_role_id_and_table_name( role.id, table.to_s  )	
 		end
 	end
 end
