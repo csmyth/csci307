@@ -4,12 +4,10 @@ class Ability
   def initialize(user)
     user ||= User.new # guest user
 
-#    if user.role? :admin
-#     can :manage, :all
-#    end
+    if user.has_role? :admin
+     can :manage, :all
+    end
     
-    can :manage, :all
-
     # Else for each table 
 	#for each priveledge in table 
            # can do action

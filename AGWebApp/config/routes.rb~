@@ -4,6 +4,8 @@ AGWebApp::Application.routes.draw do
   end
   root :to => "home#index"
   devise_for :users
+  resources :users, :only => [:show, :index]
+
   resources :privileges
 
   resources :observations
@@ -17,6 +19,8 @@ AGWebApp::Application.routes.draw do
   resources :red_flags
 
   resources :assignments
+  
+  resources :roles
 
   resources :supports
 end
