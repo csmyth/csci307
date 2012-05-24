@@ -19,6 +19,8 @@ AGWebApp::Application.routes.draw do
   resources :red_flags
 
   resources :assignments
+  
+  resources :roles
 
   resources :supports
 end
