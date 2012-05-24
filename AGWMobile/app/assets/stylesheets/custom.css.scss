@@ -2,6 +2,7 @@
 
 /* universal */
 
+
 html {
 	overflow-y: scroll;
 }
@@ -65,11 +66,11 @@ p {
 	padding-top: 9px;
 	font-weight: bold;
 	line-height: 1;
-}
 
-#logo:hover {
-	color: #fff;
-	text-decoration: none;
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
 }
 
 /* footer */
@@ -82,10 +83,10 @@ footer {
 	
 	a {
 		color: #555;
-	}
 	
-	a:hover {
-		color: #222;
+		&:hover {
+			color: #222;
+		}
 	}
 	
 	small {
