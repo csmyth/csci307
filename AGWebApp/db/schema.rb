@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120523204504) do
+ActiveRecord::Schema.define(:version => 20120523212333) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id",                           :null => false
@@ -64,8 +64,6 @@ ActiveRecord::Schema.define(:version => 20120523204504) do
     t.datetime "updated_at",                                                    :null => false
   end
 
-<<<<<<< HEAD
-=======
   create_table "privileges", :force => true do |t|
     t.integer  "role_id"
     t.string   "table_name"
@@ -80,7 +78,6 @@ ActiveRecord::Schema.define(:version => 20120523204504) do
     t.datetime "updated_at", :null => false
   end
 
->>>>>>> cff6295b4986c15eead0362cecdf2f1464a18cdd
   create_table "projects", :force => true do |t|
     t.integer  "client_id",                             :null => false
     t.integer  "project_number",                        :null => false
